@@ -6,38 +6,282 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
+    <script src="app.js" defer></script>
     <title>Document</title>
 </head>
 
 <body>
+    <!-- current state of tickets -->
+    <ul class="showcase">
+        <li>
+            <div class="sitting-showcase"></div>
+            <small>თავისუფალი</small>
+        </li>
+        <li>
+            <div class="sitting-showcase selected"></div>
+            <small>დაკავებული</small>
+        </li>
+    </ul>
+
+    <div class="container">
+            <h2>ორშაბათი</h2>
+        <div class="row monday">
+            <div class="column">
+            <img class="img" alt="film poster">
+                <div class="row">
+                    <div class="sitting">10-12</div>
+                    <div class="sitting">12-14</div>
+                    <div class="sitting">14-16</div>
+                    <div class="sitting">16-18</div>
+                    <div class="sitting">18-20</div>
+                </div>
+            </div>
+
+            <div class="column">
+                <img class="img" alt="film poster">
+                <div class="row">
+                    <div class="sitting">10-12</div>
+                    <div class="sitting">12-14</div>
+                    <div class="sitting">14-16</div>
+                    <div class="sitting">16-18</div>
+                    <div class="sitting">18-20</div>
+                </div>
+            </div>
+
+            <div class="column">
+                <img class="img" alt="film poster">
+                <div class="row">
+                    <div class="sitting">10-12</div>
+                    <div class="sitting">12-14</div>
+                    <div class="sitting">14-16</div>
+                    <div class="sitting">16-18</div>
+                    <div class="sitting">18-20</div>
+                </div>
+            </div>
+        </div>
 
 
-<ul class="showcase">
-    <li>
-        <div class="sitting-showcase"></div>
-        <small>თავისუფალი</small>
-    </li>
-    <li>
-        <div class="sitting-showcase selected"></div>
-        <small>დაკავებული</small>
-    </li>
-</ul>
+    <h2>სამშაბათი</h2>
+    <div class="row tuesday">
+        <div class="column">
+            <img class="img" alt="film poster">
+            <div class="row">
+                <div class="sitting">10-12</div>
+                <div class="sitting">12-14</div>
+                <div class="sitting">14-16</div>
+                <div class="sitting">16-18</div>
+                <div class="sitting">18-20</div>
+            </div>
+        </div>
 
-<div class="container">
+        <div class="column">
+            <img class="img" alt="film poster">
+            <div class="row">
+                <div class="sitting">10-12</div>
+                <div class="sitting">12-14</div>
+                <div class="sitting">14-16</div>
+                <div class="sitting">16-18</div>
+                <div class="sitting">18-20</div>
+            </div>
+        </div>
 
-
-    <div class="row">
-        <div class="sitting"></div>
-        <div class="sitting"></div>
-        <div class="sitting"></div>
-        <div class="sitting"></div>
-        <div class="sitting"></div>
-        <div class="sitting"></div>
-        <div class="sitting"></div>
+        <div class="column">
+            <img class="img" alt="film poster">
+            <div class="row">
+                <div class="sitting">10-12</div>
+                <div class="sitting">12-14</div>
+                <div class="sitting">14-16</div>
+                <div class="sitting">16-18</div>
+                <div class="sitting">18-20</div>
+            </div>
+        </div>
     </div>
 
-    <button id="clearAll">ბილეთების გაუქმება</button>
+    <h2>ოთხშაბათი</h2>
+    <div class="row monday">
+        <div class="column">
+            <img class="img" alt="film poster">
+            <div class="row">
+                <div class="sitting">10-12</div>
+                <div class="sitting">12-14</div>
+                <div class="sitting">14-16</div>
+                <div class="sitting">16-18</div>
+                <div class="sitting">18-20</div>
+            </div>
+        </div>
+
+        <div class="column">
+            <img class="img" alt="film poster">
+            <div class="row">
+                <div class="sitting">10-12</div>
+                <div class="sitting">12-14</div>
+                <div class="sitting">14-16</div>
+                <div class="sitting">16-18</div>
+                <div class="sitting">18-20</div>
+            </div>
+        </div>
+
+        <div class="column">
+            <img class="img" alt="film poster">
+            <div class="row">
+                <div class="sitting">10-12</div>
+                <div class="sitting">12-14</div>
+                <div class="sitting">14-16</div>
+                <div class="sitting">16-18</div>
+                <div class="sitting">18-20</div>
+            </div>
+        </div>
+    </div>
+
+    <h2>ხუთშაბათი</h2>
+    <div class="row monday">
+        <div class="column">
+            <img alt="film poster" class="img">
+            <div class="row">
+                <div class="sitting">10-12</div>
+                <div class="sitting">12-14</div>
+                <div class="sitting">14-16</div>
+                <div class="sitting">16-18</div>
+                <div class="sitting">18-20</div>
+            </div>
+        </div>
+
+        <div class="column">
+            <img alt="film poster" class="img">
+            <div class="row">
+                <div class="sitting">10-12</div>
+                <div class="sitting">12-14</div>
+                <div class="sitting">14-16</div>
+                <div class="sitting">16-18</div>
+                <div class="sitting">18-20</div>
+            </div>
+        </div>
+
+        <div class="column">
+            <img alt="film poster" class="img">
+            <div class="row">
+                <div class="sitting">10-12</div>
+                <div class="sitting">12-14</div>
+                <div class="sitting">14-16</div>
+                <div class="sitting">16-18</div>
+                <div class="sitting">18-20</div>
+            </div>
+        </div>
+    </div>
+
+    <h2>პარასკევი</h2>
+    <div class="row monday">
+        <div class="column">
+            <img alt="film poster" class="img">
+            <div class="row">
+                <div class="sitting">10-12</div>
+                <div class="sitting">12-14</div>
+                <div class="sitting">14-16</div>
+                <div class="sitting">16-18</div>
+                <div class="sitting">18-20</div>
+            </div>
+        </div>
+
+        <div class="column">
+            <img alt="film poster" class="img">
+            <div class="row">
+                <div class="sitting">10-12</div>
+                <div class="sitting">12-14</div>
+                <div class="sitting">14-16</div>
+                <div class="sitting">16-18</div>
+                <div class="sitting">18-20</div>
+            </div>
+        </div>
+
+        <div class="column">
+            <img alt="film poster" class="img">
+            <div class="row">
+                <div class="sitting">10-12</div>
+                <div class="sitting">12-14</div>
+                <div class="sitting">14-16</div>
+                <div class="sitting">16-18</div>
+                <div class="sitting">18-20</div>
+            </div>
+        </div>
+    </div>
+
+    <h2>შაბათი</h2>
+    <div class="row monday">
+        <div class="column">
+            <img alt="film poster" class="img">
+            <div class="row">
+                <div class="sitting">12-14</div>
+                <div class="sitting">14-16</div>
+                <div class="sitting">16-18</div>
+                <div class="sitting">18-20</div>
+                <div class="sitting">20-22</div>
+            </div>
+        </div>
+
+        <div class="column">
+            <img alt="film poster" class="img">
+            <div class="row">
+                <div class="sitting">12-14</div>
+                <div class="sitting">14-16</div>
+                <div class="sitting">16-18</div>
+                <div class="sitting">18-20</div>
+                <div class="sitting">20-22</div>
+            </div>
+        </div>
+
+        <div class="column">
+            <img alt="film poster" class="img">
+            <div class="row">
+                <div class="sitting">12-14</div>
+                <div class="sitting">14-16</div>
+                <div class="sitting">16-18</div>
+                <div class="sitting">18-20</div>
+                <div class="sitting">20-22</div>
+            </div>
+        </div>
+    </div>
+
+    <h2>კვირა</h2>
+    <div class="row monday">
+        <div class="column">
+            <img alt="film poster" class="img">
+            <div class="row">
+                <div class="sitting">12-14</div>
+                <div class="sitting">14-16</div>
+                <div class="sitting">16-18</div>
+                <div class="sitting">18-20</div>
+                <div class="sitting">20-22</div>
+            </div>
+        </div>
+
+        <div class="column">
+            <img alt="film poster" class="img">
+            <div class="row">
+                <div class="sitting">12-14</div>
+                <div class="sitting">14-16</div>
+                <div class="sitting">16-18</div>
+                <div class="sitting">18-20</div>
+                <div class="sitting">20-22</div>
+            </div>
+        </div>
+
+        <div class="column">
+            <img alt="film poster" class="img">
+            <div class="row">
+                <div class="sitting">12-14</div>
+                <div class="sitting">14-16</div>
+                <div class="sitting">16-18</div>
+                <div class="sitting">18-20</div>
+                <div class="sitting">20-22</div>
+            </div>
+        </div>
+    </div>
+
+
+
 </div>
+    <!-- cancel all tickets-->
+    <button id="clearAll">ბილეთების გაუქმება</button>
 </body>
 
 </html>

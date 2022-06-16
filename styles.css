@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: "BPG Arial";
-    src:local("additional/bpg_arial_2009.ttf");
+    src: local("additional/bpg_arial_2009.ttf");
 }
 
 * {
@@ -10,13 +10,13 @@
 }
 
 body {
-    background-color: #242333;
+    background-color: #221525;
     font-family: "BPG Arial", sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     color: #fff;
     margin: 0;
@@ -24,7 +24,6 @@ body {
 
 
 .container {
-    perspective: 1000px;
     margin-bottom: 30px;
     display: flex;
     flex-direction: column;
@@ -32,13 +31,14 @@ body {
 
 .sitting {
     background-color: #73737e;
-    height: 20px;
-    width: 20px;
     margin: 3px;
-    border-radius: 50%;
+    padding: 1.5px 10px;
+    border-radius: 5px;
+    font-family: "BPG Arial", sans-serif;
+    font-size: 15px;
 }
 
-.sitting-showcase{
+.sitting-showcase {
     background-color: #73737e;
     height: 20px;
     width: 20px;
@@ -46,25 +46,26 @@ body {
     border-radius: 50%;
 }
 
-.sitting-showcase.selected{
+.sitting-showcase.selected {
     background-color: #641c29;
 }
 
-small{
+small {
     margin-left: 15px;
 }
+
 .sitting.selected {
     background-color: #641c29;
 }
 
 .sitting:nth-of-type(n) {
-    margin-right: 150px;
+    margin-right: 15px;
 }
 
 
 .sitting:hover {
     cursor: pointer;
-    transform: scale(1.5);
+    transform: scale(1.2);
 }
 
 
@@ -75,7 +76,7 @@ small{
 }
 
 .showcase {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.38);
     padding: 5px 10px;
     border-radius: 5px;
     list-style-type: none;
@@ -89,18 +90,6 @@ small{
     align-items: center;
     margin: 0 10px;
 }
-
-
-.screen {
-    background-color: #fff;
-    height: 80px;
-    width: 100%;
-    margin: 15px 0;
-    transform: rotateX(-45deg);
-    box-shadow: 0px 3px 10px rgba(255, 255, 255, 0.3);
-    border-radius: 5px;
-}
-
 
 
 #clearAll {
@@ -117,4 +106,31 @@ small{
 #clearAll:hover {
     transform: scale(1.25);
 
+}
+
+.img {
+    width: 450px;
+    height: 120px;
+    margin-bottom: 25px;
+    margin-right: 10%;
+    border-radius: 5px;
+    filter: grayscale(80%);
+}
+
+.img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    filter: grayscale(0%);
+}
+
+h2 {
+    font-family: "BPG Arial", sans-serif;
+    font-size: 25px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.column {
+    margin-right: 45px;
 }

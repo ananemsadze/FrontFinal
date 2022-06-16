@@ -6,8 +6,8 @@ populateUI();
 
 function updateSelectedCount() {
     const selectedSitting = document.querySelectorAll('.row .sitting.selected');
-    const sittingIndex = [...selectedSitting].map(sittingIndex  => [...sitting].indexOf(sittingIndex ));
-    localStorage.setItem('selectedSeat', JSON.stringify(sittingIndex ));
+    const sittingIndex = [...selectedSitting].map(sittingIndex => [...sitting].indexOf(sittingIndex));
+    localStorage.setItem('selectedSeat', JSON.stringify(sittingIndex));
 }
 
 
