@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+@font-face {
+    font-family: "BPG Arial";
+    src:local("additional/bpg_arial_2009.ttf");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #242333;
+    font-family: "BPG Arial", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    color: #fff;
+    margin: 0;
+}
+
+
+.container {
+    perspective: 1000px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sitting {
+    background-color: #73737e;
+    height: 20px;
+    width: 20px;
+    margin: 3px;
+    border-radius: 50%;
+}
+
+.sitting-showcase{
+    background-color: #73737e;
+    height: 20px;
+    width: 20px;
+    margin: 3px;
+    border-radius: 50%;
+}
+
+.sitting-showcase.selected{
+    background-color: #641c29;
+}
+
+small{
+    margin-left: 15px;
+}
+.sitting.selected {
+    background-color: #641c29;
+}
+
+.sitting:nth-of-type(n) {
+    margin-right: 150px;
+}
+
+
+.sitting:hover {
+    cursor: pointer;
+    transform: scale(1.5);
+}
+
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.showcase {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 5px 10px;
+    border-radius: 5px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.showcase li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+}
+
+
+.screen {
+    background-color: #fff;
+    height: 80px;
+    width: 100%;
+    margin: 15px 0;
+    transform: rotateX(-45deg);
+    box-shadow: 0px 3px 10px rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+}
+
+
+
+#clearAll {
+    font-family: "BPG Arial", sans-serif;
+    margin: auto;
+    background-color: #0c0c0c;
+    border: 5px solid #0c0c0c;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+#clearAll:hover {
+    transform: scale(1.25);
+
+}
