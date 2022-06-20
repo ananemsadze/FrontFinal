@@ -178,14 +178,32 @@ function getInfo(weekday, info) {
     return coversArray;
 }
 
-// console.log(getCovers("",""))
+// console.log(getInfo("",""))
 const allCover = getInfo("", "");
+const images = document.getElementsByClassName("img");
 
 function setImage() {
-    var images = document.getElementsByClassName("img");
     for (var i = 0; i < images.length; i++) {
         images[i].src = allCover[i];
     }
 }
 
 setImage()
+const weekdays = ["10-12", "12-14", "14-16", "16-18", "18-20"];
+const weekends = ["12-14", "14-16", "16-18", "18-20", "20-22"];
+
+
+function addScreeningTime(elementId, weekType) {
+    for (var i = 0; i < 5; i++) {
+        var div = document.createElement('div');
+        div.className = 'sitting';
+        div.innerText = weekType[i]
+        document.getElementById(elementId).appendChild(div);
+    }
+}
+
+for (let i = 1; i <= images.length; i++) {
+    if (i >= (images.length - 6) && i <= images.length) addScreeningTime(i, weekends)
+    else addScreeningTime(i, weekdays)
+}
+
