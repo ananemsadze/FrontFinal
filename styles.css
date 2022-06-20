@@ -151,3 +151,16 @@ small {
 }
 
 /* end of clear button */
+
+
+/* responsive */
+@media only screen and (max-width: 1000px) {
+    body {
+        zoom: 80%;
+    }
+
+    .container .row {
+        flex-wrap: wrap;
+    }
+
+}
