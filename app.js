@@ -165,43 +165,52 @@ const data = [{
 
 const dataObject = data[0];
 
+// creating img element
+document.querySelectorAll('.column').forEach((x) => {
+    let img = document.createElement('img');
+    img.className = 'img';
+    img.alt = 'theater poster';
+    x.appendChild(img);
+});
 
-function getInfo(weekday, info) {
-    var coversArray = []
-    if (weekday === "" && info === "") {
-        for (let i in dataObject) {
-            for (var l of dataObject[i]) coversArray.push(l.cover)
-        }
-    } else {
-        for (var k of dataObject[weekday]) coversArray.push(k[info])
+
+// get all the image links from data object
+function getImages() {
+    let coversArray = []
+    for (let i in dataObject) {
+        for (let l of dataObject[i]) coversArray.push(l.cover)
     }
     return coversArray;
 }
 
-// console.log(getInfo("",""))
-const allCover = getInfo("", "");
+// console.log(getImages())
+const allCover = getImages();
 const images = document.getElementsByClassName("img");
 
+// sourcing all the images
 function setImage() {
-    for (var i = 0; i < images.length; i++) {
+    for (let i = 0; i < images.length; i++) {
         images[i].src = allCover[i];
     }
 }
 
 setImage()
+
+
 const weekdays = ["10-12", "12-14", "14-16", "16-18", "18-20"];
 const weekends = ["12-14", "14-16", "16-18", "18-20", "20-22"];
 
-
+// creating divs for screening time
 function addScreeningTime(elementId, weekType) {
-    for (var i = 0; i < 5; i++) {
-        var div = document.createElement('div');
+    for (let i = 0; i < 5; i++) {
+        let div = document.createElement('div');
         div.className = 'sitting';
         div.innerText = weekType[i]
         document.getElementById(elementId).appendChild(div);
     }
 }
 
+// adding the screening times
 for (let i = 1; i <= images.length; i++) {
     if (i >= (images.length - 6) && i <= images.length) addScreeningTime(i, weekends)
     else addScreeningTime(i, weekdays)
