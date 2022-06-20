@@ -165,6 +165,39 @@ const data = [{
 
 const dataObject = data[0];
 
+// get titles
+function getTitles() {
+    let titlesArray = []
+    for (let i in dataObject) {
+        for (let l of dataObject[i]) titlesArray.push(l.title)
+    }
+    return titlesArray;
+}
+
+
+// console.log(getTitles())
+const allTitles = getTitles();
+
+
+// creating h4 element
+document.querySelectorAll('.column').forEach((x) => {
+    let h4 = document.createElement('h4');
+    h4.className = "title";
+    x.appendChild(h4);
+});
+
+const titles = document.getElementsByClassName("title");
+
+// adding the titles
+function setTitle() {
+    for (let i = 0; i < titles.length; i++) {
+        titles[i].innerHTML = allTitles[i];
+    }
+}
+
+setTitle();
+
+
 // creating img element
 document.querySelectorAll('.column').forEach((x) => {
     let img = document.createElement('img');
@@ -215,4 +248,8 @@ for (let i = 1; i <= images.length; i++) {
     if (i >= (images.length - 6) && i <= images.length) addScreeningTime(i, weekends)
     else addScreeningTime(i, weekdays)
 }
+
+
+
+
 
