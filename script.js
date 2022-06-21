@@ -7,7 +7,7 @@ Main();
 // saves the selected element to local storage
 function updateSelectedCount() {
     const selectedSitting = document.querySelectorAll('.row .sitting.selected');
-    console.log(selectedSitting)
+    // console.log(selectedSitting)
     const sittingIndex = [...selectedSitting].map(sittingIndex => [...sitting].indexOf(sittingIndex));
     localStorage.setItem('selectedSeat', JSON.stringify(sittingIndex));
 }
