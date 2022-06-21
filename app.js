@@ -165,19 +165,18 @@ const data = [{
 
 const dataObject = data[0];
 
-// get titles
-function getTitles() {
-    let titlesArray = []
+//get info
+function getInfo(info) {
+    let infoArray = []
     for (let i in dataObject) {
-        for (let l of dataObject[i]) titlesArray.push(l.title)
+        for (let l of dataObject[i]) infoArray.push(l[info])
     }
-    return titlesArray;
+    return infoArray;
 }
 
 
-// console.log(getTitles())
-const allTitles = getTitles();
-
+const allTitles = getInfo("title");
+// console.log(allTitles);
 
 // creating h4 element
 document.querySelectorAll('.column').forEach((x) => {
@@ -208,16 +207,8 @@ document.querySelectorAll('.column').forEach((x) => {
 
 
 // get all the image links from data object
-function getImages() {
-    let coversArray = []
-    for (let i in dataObject) {
-        for (let l of dataObject[i]) coversArray.push(l.cover)
-    }
-    return coversArray;
-}
-
-// console.log(getImages())
-const allCover = getImages();
+const allCover = getInfo("cover");
+// console.log(allCover);
 const images = document.getElementsByClassName("img");
 
 // sourcing all the images
